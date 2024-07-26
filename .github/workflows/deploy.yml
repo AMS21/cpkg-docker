@@ -24,6 +24,14 @@ jobs:
 
       matrix:
         cfg:
+          # Debian
+          - { base: "debian", tag: "testing-slim",  tag_name: "testing",  extra_args: "" }
+          - { base: "debian", tag: "unstable-slim", tag_name: "unstable", extra_args: "" }
+          - { base: "debian", tag: "12-slim",       tag_name: "12",       extra_args: "" }
+          - { base: "debian", tag: "11-slim",       tag_name: "11",       extra_args: "" }
+          - { base: "debian", tag: "10-slim",       tag_name: "10",       extra_args: "" }
+          - { base: "debian", tag: "9-slim",        tag_name: "9",        extra_args: "OLD_RELEASE=true" }
+
           # Manjaro
           - { base: "manjaro", tag: "latest", tag_name: "latest", extra_args: "" }
 
