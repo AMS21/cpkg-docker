@@ -32,6 +32,23 @@ jobs:
           - { base: "debian", tag: "10-slim",       tag_name: "10",       extra_args: "" }
           - { base: "debian", tag: "9-slim",        tag_name: "9",        extra_args: "OLD_RELEASE=true" }
 
+          # Linux Mint
+          - { base: "linuxmint", tag: "22",   tag_name: "22",   extra_args: "" }
+          - { base: "linuxmint", tag: "21.3", tag_name: "21.3", extra_args: "" }
+          - { base: "linuxmint", tag: "21.2", tag_name: "21.2", extra_args: "" }
+          - { base: "linuxmint", tag: "21.1", tag_name: "21.1", extra_args: "" }
+          - { base: "linuxmint", tag: "21",   tag_name: "21",   extra_args: "" }
+          - { base: "linuxmint", tag: "20.3", tag_name: "20.3", extra_args: "" }
+          - { base: "linuxmint", tag: "20.2", tag_name: "20.2", extra_args: "" }
+          - { base: "linuxmint", tag: "20.1", tag_name: "20.1", extra_args: "" }
+          - { base: "linuxmint", tag: "20",   tag_name: "20",   extra_args: "" }
+          - { base: "linuxmint", tag: "19.3", tag_name: "19.3", extra_args: "" }
+          - { base: "linuxmint", tag: "19.2", tag_name: "19.2", extra_args: "" }
+          - { base: "linuxmint", tag: "19.1", tag_name: "19.1", extra_args: "" }
+          - { base: "linuxmint", tag: "19",   tag_name: "19",   extra_args: "" }
+          - { base: "linuxmint", tag: "18",   tag_name: "18",   extra_args: "" }
+          - { base: "linuxmint", tag: "17",   tag_name: "17",   extra_args: "" }
+
           # Manjaro
           - { base: "manjaro", tag: "latest", tag_name: "latest", extra_args: "" }
 
