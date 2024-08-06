@@ -32,6 +32,10 @@ jobs:
           - { base: "debian", tag: "10-slim",       tag_name: "10",       extra_args: "" }
           - { base: "debian", tag: "9-slim",        tag_name: "9",        extra_args: "OLD_RELEASE=true" }
 
+          # Kali Linux
+          - { base: "kalilinux", tag: "kali-rolling",      tag_name: "rolling",      extra_args: "" }
+          - { base: "kalilinux", tag: "kali-last-release", tag_name: "last-release", extra_args: "" }
+
           # Linux Mint
           - { base: "linuxmint", tag: "22",   tag_name: "22",   extra_args: "" }
           - { base: "linuxmint", tag: "21.3", tag_name: "21.3", extra_args: "" }
