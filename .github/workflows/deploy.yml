@@ -66,6 +66,11 @@ jobs:
           - { base: "linuxmint", tag: "18",   tag_name: "18",   extra_args: "" }
           - { base: "linuxmint", tag: "17",   tag_name: "17",   extra_args: "" }
 
+          # Linux Mint Debian Edition
+          - { base: "lmde", tag: "6", tag_name: "6", extra_args: "" }
+          - { base: "lmde", tag: "5", tag_name: "5", extra_args: "" }
+          - { base: "lmde", tag: "4", tag_name: "4", extra_args: "" }
+
           # Manjaro
           - { base: "manjaro", tag: "latest", tag_name: "latest", extra_args: "" }
 
