@@ -32,6 +32,19 @@ jobs:
           - { base: "debian", tag: "10-slim",       tag_name: "10",       extra_args: "" }
           - { base: "debian", tag: "9-slim",        tag_name: "9",        extra_args: "OLD_RELEASE=true" }
 
+          # Elementary OS
+          - { base: "elementaryos", tag: "horus-stable",           tag_name: "horus-stable",           extra_args: "" }
+          - { base: "elementaryos", tag: "horus-unstable",         tag_name: "horus-unstable",         extra_args: "" }
+          - { base: "elementaryos", tag: "juno-stable",            tag_name: "juno-stable",            extra_args: "" }
+          - { base: "elementaryos", tag: "juno-unstable",          tag_name: "juno-unstable",          extra_args: "" }
+          - { base: "elementaryos", tag: "loki-stable",            tag_name: "loki-stable",            extra_args: "" }
+          - { base: "elementaryos", tag: "loki-unstable",          tag_name: "loki-unstable",          extra_args: "" }
+          - { base: "elementaryos", tag: "odin-stable",            tag_name: "odin-stable",            extra_args: "" }
+          - { base: "elementaryos", tag: "odin-unstable",          tag_name: "odin-unstable",          extra_args: "" }
+          - { base: "elementaryos", tag: "ubuntu-lunar-unstable",  tag_name: "ubuntu-lunar-unstable",  extra_args: "" }
+          - { base: "elementaryos", tag: "ubuntu-mantic-unstable", tag_name: "ubuntu-mantic-unstable", extra_args: "" }
+          - { base: "elementaryos", tag: "ubuntu-noble-unstable",  tag_name: "ubuntu-noble-unstable",  extra_args: "" }
+
           # Kali Linux
           - { base: "kalilinux", tag: "kali-rolling",      tag_name: "rolling",      extra_args: "" }
           - { base: "kalilinux", tag: "kali-last-release", tag_name: "last-release", extra_args: "" }
