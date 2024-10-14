@@ -45,6 +45,29 @@ jobs:
           - { base: "elementaryos", tag: "ubuntu-mantic-unstable", tag_name: "ubuntu-mantic-unstable", extra_args: "" }
           - { base: "elementaryos", tag: "ubuntu-noble-unstable",  tag_name: "ubuntu-noble-unstable",  extra_args: "" }
 
+          # Fedora
+          - { base: "fedora", tag: "41", tag_name: "41", extra_args: "" }
+          - { base: "fedora", tag: "40", tag_name: "40", extra_args: "" }
+          - { base: "fedora", tag: "39", tag_name: "39", extra_args: "" }
+          - { base: "fedora", tag: "38", tag_name: "38", extra_args: "" }
+          - { base: "fedora", tag: "37", tag_name: "37", extra_args: "" }
+          - { base: "fedora", tag: "36", tag_name: "36", extra_args: "" }
+          - { base: "fedora", tag: "35", tag_name: "35", extra_args: "" }
+          - { base: "fedora", tag: "34", tag_name: "34", extra_args: "" }
+          - { base: "fedora", tag: "33", tag_name: "33", extra_args: "" }
+          - { base: "fedora", tag: "32", tag_name: "32", extra_args: "" }
+          - { base: "fedora", tag: "31", tag_name: "31", extra_args: "" }
+          - { base: "fedora", tag: "30", tag_name: "30", extra_args: "" }
+          - { base: "fedora", tag: "29", tag_name: "29", extra_args: "" }
+          - { base: "fedora", tag: "28", tag_name: "28", extra_args: "" }
+          - { base: "fedora", tag: "27", tag_name: "27", extra_args: "" }
+          - { base: "fedora", tag: "26", tag_name: "26", extra_args: "" }
+          - { base: "fedora", tag: "25", tag_name: "25", extra_args: "" }
+          - { base: "fedora", tag: "24", tag_name: "24", extra_args: "" }
+          - { base: "fedora", tag: "23", tag_name: "23", extra_args: "" }
+          - { base: "fedora", tag: "22", tag_name: "22", extra_args: "" }
+          - { base: "fedora", tag: "21", tag_name: "21", extra_args: "" }
+
           # Kali Linux
           - { base: "kalilinux", tag: "kali-rolling",      tag_name: "rolling",      extra_args: "" }
           - { base: "kalilinux", tag: "kali-last-release", tag_name: "last-release", extra_args: "" }
