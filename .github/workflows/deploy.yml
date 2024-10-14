@@ -109,8 +109,8 @@ jobs:
           - { base: "manjaro", tag: "latest", tag_name: "latest", extra_args: "" }
 
           # Rocky Linux
-          - { base: "rockylinux", tag: "8", tag_name: "8", extra_args: "" }
           - { base: "rockylinux", tag: "9", tag_name: "9", extra_args: "" }
+          - { base: "rockylinux", tag: "8", tag_name: "8", extra_args: "" }
 
           # Ubuntu
           - { base: "ubuntu", tag: "24.10",         tag_name: "24.10", extra_args: "" }
