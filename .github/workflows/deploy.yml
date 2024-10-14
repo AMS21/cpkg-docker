@@ -109,6 +109,13 @@ jobs:
           - { base: "lmde", tag: "5", tag_name: "5", extra_args: "" }
           - { base: "lmde", tag: "4", tag_name: "4", extra_args: "" }
 
+          # Mageia
+          - { base: "mageia", tag: "cauldron",  tag_name: "cauldron",  extra_args: "" }
+          - { base: "mageia", tag: "9",         tag_name: "9",         extra_args: "" }
+          - { base: "mageia", tag: "8",         tag_name: "8",         extra_args: "" }
+          - { base: "mageia", tag: "7",         tag_name: "7",         extra_args: "" }
+          - { base: "mageia", tag: "6",         tag_name: "6",         extra_args: "" }
+
           # Manjaro
           - { base: "manjaro", tag: "latest", tag_name: "latest", extra_args: "" }
 
