@@ -108,6 +108,11 @@ jobs:
           # Manjaro
           - { base: "manjaro", tag: "latest", tag_name: "latest", extra_args: "" }
 
+          # Oracle Linux
+          - { base: "oraclelinux", tag: "9", tag_name: "9", extra_args: "" }
+          - { base: "oraclelinux", tag: "8", tag_name: "8", extra_args: "" }
+          - { base: "oraclelinux", tag: "7", tag_name: "7", extra_args: "" }
+
           # Rocky Linux
           - { base: "rockylinux", tag: "9", tag_name: "9", extra_args: "" }
           - { base: "rockylinux", tag: "8", tag_name: "8", extra_args: "" }
