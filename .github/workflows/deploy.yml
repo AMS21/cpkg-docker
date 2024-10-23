@@ -84,6 +84,7 @@ jobs:
           - { base: "elementaryos", tag: "ubuntu-noble-unstable",  tag_name: "ubuntu-noble-unstable",  extra_args: "" }
 
           # Fedora
+          - { base: "fedora", tag: "42", tag_name: "42", extra_args: "" }
           - { base: "fedora", tag: "41", tag_name: "41", extra_args: "" }
           - { base: "fedora", tag: "40", tag_name: "40", extra_args: "" }
           - { base: "fedora", tag: "39", tag_name: "39", extra_args: "" }
