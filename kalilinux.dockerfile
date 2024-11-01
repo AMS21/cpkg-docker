@@ -1,4 +1,4 @@
-ARG TAG
+ARG TAG=kali-last-release
 
 FROM kalilinux/$TAG
 

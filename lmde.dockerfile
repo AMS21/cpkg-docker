@@ -1,6 +1,6 @@
-ARG TAG
+ARG TAG=6
 
-FROM linuxmintd/lmde$TAG-amd64:latest
+FROM linuxmintd/lmde$TAG-amd64
 
 ENV DEBIAN_FRONTEND=noninteractive \
     RUSTUP_HOME=/usr/local/rustup \
