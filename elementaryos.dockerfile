@@ -7,7 +7,12 @@ ENV DEBIAN_FRONTEND=noninteractive \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH
 
+ARG OLD_RELEASE=false
+
 RUN set -eux; \
+    if [ "$OLD_RELEASE" = "true" ]; then \
+        sed -i 's|http://\([a-z0-9.-]*\)\.ubuntu.com/ubuntu|http://old-releases.ubuntu.com/ubuntu|' /etc/apt/sources.list; \
+    fi; \
     apt update; \
     apt upgrade -y; \
     apt install ca-certificates curl gcc gcc-multilib git -y --no-install-recommends; \
