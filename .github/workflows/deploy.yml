@@ -71,6 +71,8 @@ jobs:
           - { base: "debian", tag: "9-slim",        tag_name: "9",        extra_args: "OLD_RELEASE=true" }
 
           # Elementary OS
+          - { base: "elementaryos", tag: "circe-stable",           tag_name: "circe-stable",           extra_args: "" }
+          - { base: "elementaryos", tag: "circe-unstable",         tag_name: "circe-unstable",         extra_args: "" }
           - { base: "elementaryos", tag: "horus-stable",           tag_name: "horus-stable",           extra_args: "" }
           - { base: "elementaryos", tag: "horus-unstable",         tag_name: "horus-unstable",         extra_args: "" }
           - { base: "elementaryos", tag: "juno-stable",            tag_name: "juno-stable",            extra_args: "" }
