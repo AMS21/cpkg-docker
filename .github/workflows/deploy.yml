@@ -114,6 +114,7 @@ jobs:
           - { base: "kalilinux", tag: "kali-last-release", tag_name: "last-release", extra_args: "" }
 
           # Linux Mint
+          - { base: "linuxmint", tag: "22.1", tag_name: "22.1", extra_args: "" }
           - { base: "linuxmint", tag: "22",   tag_name: "22",   extra_args: "" }
           - { base: "linuxmint", tag: "21.3", tag_name: "21.3", extra_args: "" }
           - { base: "linuxmint", tag: "21.2", tag_name: "21.2", extra_args: "" }
