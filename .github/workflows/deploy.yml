@@ -81,7 +81,7 @@ jobs:
           - { base: "elementaryos", tag: "loki-unstable",          tag_name: "loki-unstable",          extra_args: "" }
           - { base: "elementaryos", tag: "odin-stable",            tag_name: "odin-stable",            extra_args: "" }
           - { base: "elementaryos", tag: "odin-unstable",          tag_name: "odin-unstable",          extra_args: "" }
-          - { base: "elementaryos", tag: "ubuntu-lunar-unstable",  tag_name: "ubuntu-lunar-unstable",  extra_args: "" }
+          - { base: "elementaryos", tag: "ubuntu-lunar-unstable",  tag_name: "ubuntu-lunar-unstable",  extra_args: "OLD_RELEASE=true" }
           - { base: "elementaryos", tag: "ubuntu-mantic-unstable", tag_name: "ubuntu-mantic-unstable", extra_args: "OLD_RELEASE=true" }
           - { base: "elementaryos", tag: "ubuntu-noble-unstable",  tag_name: "ubuntu-noble-unstable",  extra_args: "" }
 
