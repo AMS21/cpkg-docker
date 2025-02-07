@@ -8,7 +8,7 @@ ENV RUSTUP_HOME=/usr/local/rustup \
 
 RUN set -eux; \
     dnf update -y; \
-    dnf install gcc git -y; \
+    dnf install flatpak gcc git -y; \
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --profile minimal --no-modify-path -y; \
     dnf autoremove -y; \
     dnf clean all; \

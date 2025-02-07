@@ -42,26 +42,26 @@ jobs:
           - { base: "alpine", tag: "3.12", tag_name: "3.12", extra_args: "" }
           - { base: "alpine", tag: "3.11", tag_name: "3.11", extra_args: "" }
           - { base: "alpine", tag: "3.10", tag_name: "3.10", extra_args: "" }
-          - { base: "alpine", tag: "3.9",  tag_name: "3.9",  extra_args: "" }
-          - { base: "alpine", tag: "3.8",  tag_name: "3.8",  extra_args: "" }
-          - { base: "alpine", tag: "3.7",  tag_name: "3.7",  extra_args: "" }
-          - { base: "alpine", tag: "3.6",  tag_name: "3.6",  extra_args: "" }
-          - { base: "alpine", tag: "3.5",  tag_name: "3.5",  extra_args: "" }
-          - { base: "alpine", tag: "3.4",  tag_name: "3.4",  extra_args: "" }
-          - { base: "alpine", tag: "3.3",  tag_name: "3.3",  extra_args: "" }
-          - { base: "alpine", tag: "3.2",  tag_name: "3.2",  extra_args: "" }
-          - { base: "alpine", tag: "3.1",  tag_name: "3.1",  extra_args: "" }
+          - { base: "alpine", tag: "3.9",  tag_name: "3.9",  extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "alpine", tag: "3.8",  tag_name: "3.8",  extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "alpine", tag: "3.7",  tag_name: "3.7",  extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "alpine", tag: "3.6",  tag_name: "3.6",  extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "alpine", tag: "3.5",  tag_name: "3.5",  extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "alpine", tag: "3.4",  tag_name: "3.4",  extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "alpine", tag: "3.3",  tag_name: "3.3",  extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "alpine", tag: "3.2",  tag_name: "3.2",  extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "alpine", tag: "3.1",  tag_name: "3.1",  extra_args: "FLATPAK_SUPPORT=false" }
 
           # Amazon Linux
           - { base: "amazonlinux", tag: "2",       tag_name: "2",       extra_args: "" }
-          - { base: "amazonlinux", tag: "1",       tag_name: "1",       extra_args: "" }
+          - { base: "amazonlinux", tag: "1",       tag_name: "1",       extra_args: "FLATPAK_SUPPORT=false" }
           - { base: "amazonlinux", tag: "2023",    tag_name: "2023",    extra_args: "" }
-          - { base: "amazonlinux", tag: "2022",    tag_name: "2022",    extra_args: "" }
-          - { base: "amazonlinux", tag: "2018.03", tag_name: "2018.03", extra_args: "" }
+          - { base: "amazonlinux", tag: "2022",    tag_name: "2022",    extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "amazonlinux", tag: "2018.03", tag_name: "2018.03", extra_args: "FLATPAK_SUPPORT=false" }
           - { base: "amazonlinux", tag: "2017.12", tag_name: "2017.12", extra_args: "" }
-          - { base: "amazonlinux", tag: "2017.09", tag_name: "2017.09", extra_args: "" }
-          - { base: "amazonlinux", tag: "2017.03", tag_name: "2017.03", extra_args: "" }
-          - { base: "amazonlinux", tag: "2016.09", tag_name: "2016.09", extra_args: "" }
+          - { base: "amazonlinux", tag: "2017.09", tag_name: "2017.09", extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "amazonlinux", tag: "2017.03", tag_name: "2017.03", extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "amazonlinux", tag: "2016.09", tag_name: "2016.09", extra_args: "FLATPAK_SUPPORT=false" }
 
           # Debian
           - { base: "debian", tag: "testing-slim",  tag_name: "testing",  extra_args: "" }
@@ -78,8 +78,8 @@ jobs:
           - { base: "elementaryos", tag: "horus-unstable",         tag_name: "horus-unstable",         extra_args: "" }
           - { base: "elementaryos", tag: "juno-stable",            tag_name: "juno-stable",            extra_args: "" }
           - { base: "elementaryos", tag: "juno-unstable",          tag_name: "juno-unstable",          extra_args: "" }
-          - { base: "elementaryos", tag: "loki-stable",            tag_name: "loki-stable",            extra_args: "" }
-          - { base: "elementaryos", tag: "loki-unstable",          tag_name: "loki-unstable",          extra_args: "" }
+          - { base: "elementaryos", tag: "loki-stable",            tag_name: "loki-stable",            extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "elementaryos", tag: "loki-unstable",          tag_name: "loki-unstable",          extra_args: "FLATPAK_SUPPORT=false" }
           - { base: "elementaryos", tag: "odin-stable",            tag_name: "odin-stable",            extra_args: "" }
           - { base: "elementaryos", tag: "odin-unstable",          tag_name: "odin-unstable",          extra_args: "" }
           - { base: "elementaryos", tag: "ubuntu-lunar-unstable",  tag_name: "ubuntu-lunar-unstable",  extra_args: "OLD_RELEASE=true" }
@@ -107,8 +107,8 @@ jobs:
           - { base: "fedora", tag: "25", tag_name: "25", extra_args: "" }
           - { base: "fedora", tag: "24", tag_name: "24", extra_args: "" }
           - { base: "fedora", tag: "23", tag_name: "23", extra_args: "" }
-          - { base: "fedora", tag: "22", tag_name: "22", extra_args: "" }
-          - { base: "fedora", tag: "21", tag_name: "21", extra_args: "" }
+          - { base: "fedora", tag: "22", tag_name: "22", extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "fedora", tag: "21", tag_name: "21", extra_args: "FLATPAK_SUPPORT=false" }
 
           # Kali Linux
           - { base: "kalilinux", tag: "kali-rolling",      tag_name: "rolling",      extra_args: "" }
@@ -130,7 +130,7 @@ jobs:
           - { base: "linuxmint", tag: "19.1", tag_name: "19.1", extra_args: "" }
           - { base: "linuxmint", tag: "19",   tag_name: "19",   extra_args: "" }
           - { base: "linuxmint", tag: "18",   tag_name: "18",   extra_args: "" }
-          - { base: "linuxmint", tag: "17",   tag_name: "17",   extra_args: "" }
+          - { base: "linuxmint", tag: "17",   tag_name: "17",   extra_args: "FLATPAK_SUPPORT=false" }
 
           # Linux Mint Debian Edition
           - { base: "lmde", tag: "6", tag_name: "6", extra_args: "" }
@@ -182,11 +182,11 @@ jobs:
           - { base: "ubuntu", tag: "17.10",         tag_name: "17.10", extra_args: "OLD_RELEASE=true" }
           - { base: "ubuntu", tag: "17.04",         tag_name: "17.04", extra_args: "OLD_RELEASE=true" }
           - { base: "ubuntu", tag: "16.10",         tag_name: "16.10", extra_args: "OLD_RELEASE=true" }
-          - { base: "ubuntu", tag: "16.04",         tag_name: "16.04", extra_args: "" }
-          - { base: "ubuntu", tag: "wily-20160526", tag_name: "15.10", extra_args: "OLD_RELEASE=true" }
-          - { base: "ubuntu", tag: "15.04",         tag_name: "15.04", extra_args: "OLD_RELEASE=true" }
-          - { base: "ubuntu", tag: "14.10",         tag_name: "14.10", extra_args: "OLD_RELEASE=true" }
-          - { base: "ubuntu", tag: "14.04",         tag_name: "14.04", extra_args: "" }
+          - { base: "ubuntu", tag: "16.04",         tag_name: "16.04", extra_args: "FLATPAK_SUPPORT=false" }
+          - { base: "ubuntu", tag: "wily-20160526", tag_name: "15.10", extra_args: "OLD_RELEASE=true FLATPAK_SUPPORT=false" }
+          - { base: "ubuntu", tag: "15.04",         tag_name: "15.04", extra_args: "OLD_RELEASE=true FLATPAK_SUPPORT=false" }
+          - { base: "ubuntu", tag: "14.10",         tag_name: "14.10", extra_args: "OLD_RELEASE=true FLATPAK_SUPPORT=false" }
+          - { base: "ubuntu", tag: "14.04",         tag_name: "14.04", extra_args: "FLATPAK_SUPPORT=false" }
 
     steps:
       - name: Check out the repo

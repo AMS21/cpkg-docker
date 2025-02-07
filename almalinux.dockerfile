@@ -8,7 +8,7 @@ ENV RUSTUP_HOME=/usr/local/rustup \
 
 RUN set -eux; \
     yum update -y; \
-    yum install gcc git -y; \
+    yum install flatpak gcc git -y; \
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --profile minimal --no-modify-path -y; \
     yum autoremove -y; \
     yum clean all; \
