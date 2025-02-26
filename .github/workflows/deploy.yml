@@ -183,9 +183,7 @@ jobs:
           - { base: "ubuntu", tag: "17.04",         tag_name: "17.04", extra_args: "OLD_RELEASE=true" }
           - { base: "ubuntu", tag: "16.10",         tag_name: "16.10", extra_args: "OLD_RELEASE=true" }
           - { base: "ubuntu", tag: "16.04",         tag_name: "16.04", extra_args: "FLATPAK_SUPPORT=false" }
-          - { base: "ubuntu", tag: "wily-20160526", tag_name: "15.10", extra_args: "OLD_RELEASE=true FLATPAK_SUPPORT=false" }
-          - { base: "ubuntu", tag: "15.04",         tag_name: "15.04", extra_args: "OLD_RELEASE=true FLATPAK_SUPPORT=false" }
-          - { base: "ubuntu", tag: "14.10",         tag_name: "14.10", extra_args: "OLD_RELEASE=true FLATPAK_SUPPORT=false" }
+          # NOTE: 15.10, 15.04, 14.10 use the docker schema v1, which is not supported anymore
           - { base: "ubuntu", tag: "14.04",         tag_name: "14.04", extra_args: "FLATPAK_SUPPORT=false" }
 
     steps:
