@@ -63,6 +63,15 @@ jobs:
           - { base: "amazonlinux", tag: "2017.03", tag_name: "2017.03", extra_args: "FLATPAK_SUPPORT=false" }
           - { base: "amazonlinux", tag: "2016.09", tag_name: "2016.09", extra_args: "FLATPAK_SUPPORT=false" }
 
+          # Arch Linux
+          - { base: "archlinux", tag: "latest", tag_name: "latest", extra_args: "" }
+
+          # Artix Linux
+          - { base: "artixlinux", tag: "latest", tag_name: "latest", extra_args: "" }
+
+          # Cachy OS
+          - { base: "cachyos", tag: "latest", tag_name: "latest", extra_args: "" }
+
           # Debian
           - { base: "debian", tag: "testing-slim",  tag_name: "testing",  extra_args: "" }
           - { base: "debian", tag: "unstable-slim", tag_name: "unstable", extra_args: "" }
