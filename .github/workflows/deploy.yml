@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: '0 4 * * 0' # At 04:00 on Sunday
   push:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
@@ -243,7 +241,7 @@ jobs:
            TAG=${{ matrix.cfg.tag }}
            ${{ matrix.cfg.extra_args }}
           file: ./${{ matrix.cfg.base }}.dockerfile
-          push: true
+          push: ${{ github.ref == 'refs/heads/main' }}
           platforms: "linux/amd64"
           annotations: ${{ steps.meta.outputs.annotations }}
           tags: ${{ steps.meta.outputs.tags }}
@@ -254,11 +252,11 @@ jobs:
         with:
           subject-name: index.docker.io/ams21/cpkg-docker
           subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: true
+          push-to-registry: ${{ github.ref == 'refs/heads/main' }}
 
       - name: Attest GitHub Container Registry
         uses: actions/attest-build-provenance@v2
         with:
           subject-name: ghcr.io/ams21/cpkg-docker
           subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: true
+          push-to-registry: ${{ github.ref == 'refs/heads/main' }}
