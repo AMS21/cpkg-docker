@@ -171,6 +171,7 @@ jobs:
           - { base: "rockylinux", tag: "8", tag_name: "8", extra_args: "" }
 
           # Ubuntu
+          - { base: "ubuntu", tag: "25.10",         tag_name: "25.10", extra_args: "" }
           - { base: "ubuntu", tag: "25.04",         tag_name: "25.04", extra_args: "" }
           - { base: "ubuntu", tag: "24.10",         tag_name: "24.10", extra_args: "" }
           - { base: "ubuntu", tag: "24.04",         tag_name: "24.04", extra_args: "" }
