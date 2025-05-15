@@ -10,11 +10,14 @@ ARG FLATPAK_SUPPORT=true
 
 RUN set -eux; \
     apk update && apk upgrade; \
-    apk add curl gcc git musl-dev; \
+    apk add curl gcc git musl-dev openssl-dev; \
     if [ "${FLATPAK_SUPPORT}" = "true" ]; then \
         apk add flatpak; \
         flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo; \
     fi; \
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --profile minimal --no-modify-path -y; \
-    apk del --purge curl; \
+    . "/usr/local/cargo/env"; \
+    rustup install nightly; \
+    cargo install cargo-tarpaulin; \
+    apk del --purge curl musl-dev openssl-dev; \
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/*;

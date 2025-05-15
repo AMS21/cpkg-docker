@@ -10,12 +10,16 @@ ARG FLATPAK_SUPPORT=true
 
 RUN set -eux; \
     yum update -y; \
-    yum install dnf gcc git -y; \
+    yum install dnf gcc git openssl-devel -y; \
     if [ "${FLATPAK_SUPPORT}" = "true" ]; then \
         yum install flatpak -y; \
         flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo; \
     fi; \
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --profile minimal --no-modify-path -y; \
+    . "/usr/local/cargo/env"; \
+    rustup install nightly; \
+    cargo install cargo-tarpaulin; \
+    yum remove openssl-devel -y; \
     yum autoremove -y; \
     yum clean all; \
     rm -rf /tmp/* /var/tmp/*;

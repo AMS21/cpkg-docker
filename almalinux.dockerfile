@@ -8,8 +8,12 @@ ENV RUSTUP_HOME=/usr/local/rustup \
 
 RUN set -eux; \
     yum update -y; \
-    yum install flatpak gcc git -y; \
+    yum install flatpak gcc git openssl-devel -y; \
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --profile minimal --no-modify-path -y; \
+    . "/usr/local/cargo/env"; \
+    rustup install nightly; \
+    cargo install cargo-tarpaulin; \
+    yum remove openssl-devel -y; \
     yum autoremove -y; \
     yum clean all; \
     rm -rf /tmp/* /var/tmp/*;
