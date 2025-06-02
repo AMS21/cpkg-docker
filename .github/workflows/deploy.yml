@@ -28,6 +28,7 @@ jobs:
 
           # Alpine Linux
           - { base: "alpine", tag: "edge", tag_name: "edge", extra_args: "" }
+          - { base: "alpine", tag: "3.22", tag_name: "3.22", extra_args: "" }
           - { base: "alpine", tag: "3.21", tag_name: "3.21", extra_args: "" }
           - { base: "alpine", tag: "3.20", tag_name: "3.20", extra_args: "" }
           - { base: "alpine", tag: "3.19", tag_name: "3.19", extra_args: "" }
