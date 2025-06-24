@@ -23,6 +23,7 @@ jobs:
       matrix:
         cfg:
           # Alma Linux
+          - { base: "almalinux", tag: "10", tag_name: "10", extra_args: "" }
           - { base: "almalinux", tag: "9", tag_name: "9", extra_args: "" }
           - { base: "almalinux", tag: "8", tag_name: "8", extra_args: "" }
 
