@@ -77,7 +77,7 @@ jobs:
           - { base: "debian", tag: "unstable-slim", tag_name: "unstable", extra_args: "" }
           - { base: "debian", tag: "12-slim",       tag_name: "12",       extra_args: "" }
           - { base: "debian", tag: "11-slim",       tag_name: "11",       extra_args: "" }
-          - { base: "debian", tag: "10-slim",       tag_name: "10",       extra_args: "" }
+          - { base: "debian", tag: "10-slim",       tag_name: "10",       extra_args: "OLD_RELEASE=true" }
           - { base: "debian", tag: "9-slim",        tag_name: "9",        extra_args: "OLD_RELEASE=true" }
 
           # Elementary OS
@@ -144,8 +144,8 @@ jobs:
 
           # Linux Mint Debian Edition
           - { base: "lmde", tag: "6", tag_name: "6", extra_args: "" }
-          - { base: "lmde", tag: "5", tag_name: "5", extra_args: "" }
-          - { base: "lmde", tag: "4", tag_name: "4", extra_args: "" }
+          - { base: "lmde", tag: "5", tag_name: "5", extra_args: "OLD_RELEASE=true" }
+          - { base: "lmde", tag: "4", tag_name: "4", extra_args: "OLD_RELEASE=true" }
 
           # Mageia
           - { base: "mageia", tag: "cauldron",  tag_name: "cauldron",  extra_args: "" }
