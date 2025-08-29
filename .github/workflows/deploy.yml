@@ -254,14 +254,14 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Attest Docker Hub
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v3
         with:
           subject-name: index.docker.io/ams21/cpkg-docker
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: ${{ github.ref == 'refs/heads/main' }}
 
       - name: Attest GitHub Container Registry
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v3
         with:
           subject-name: ghcr.io/ams21/cpkg-docker
           subject-digest: ${{ steps.push.outputs.digest }}
